@@ -22,10 +22,12 @@ gobuilder is an parametrized dockerfile that can be used to turn a gobinary into
 
 #### Usage
 
+For example this command builds my [loggy](https://github.com/4thel00z/loggy) server in three lines:
+
 ```
 export GITHUB_URL="github.com/4thel00z/loggy/...@latest"
 export BINARY_NAME="loggy"
-docker build --build-arg GITHUB_URL=$GITHUB_URL --build-arg BINARY_NAME=$BINARY_NAME -t $BINARY_NAME-gobuilder gobuilder
+docker build --build-arg GITHUB_URL=$GITHUB_URL --build-arg BINARY_NAME=$BINARY_NAME -t $BINARY_NAME-gobuilder  https://raw.githubusercontent.com/4thel00z/images/master/gobuilder/Dockerfile
 ```
 
 ## License
